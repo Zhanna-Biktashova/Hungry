@@ -1,6 +1,6 @@
 @import '_vars';
 @import '_global';
-@import '_media';
+
 
 // start header
 
@@ -51,7 +51,7 @@
       color: #fff;
       text-transform: uppercase;
       background-color: transparent;
-      border:1px solid $yellow;
+      border: 1px solid $yellow;
       border-radius: 5px;
       @include f700;
       font-size: 14px;
@@ -164,6 +164,43 @@
 .menu{
   height: 100px;
   margin-bottom: 225px;
+  &__btn{
+    opacity: 0;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 20px;
+    top: 30px;
+    z-index: 12;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    padding: 0;
+    &::after,
+    &::before{
+      content: '';
+      width: 100%;
+      height: 5px;
+      background-color: $yellow;
+      position: absolute;
+    }
+    &::before{
+      top: 0;
+      left: 0;
+    }
+    &::after{
+      bottom: 0;
+      left: 0;
+    }
+    span{
+      background-color: $yellow;
+      height: 5px;
+      width: 100%;
+    }
+  }
   &__list{
     display: flex;
     justify-content: space-around;
@@ -191,7 +228,7 @@
       background-color: rgba(255, 255, 255, 0.2);
       width: calc(50% - 150px/2 - 35px);
     }
-    a{
+    &-link{
       color: #fff;
       font-size: 16px;
       line-height: 18px;
@@ -261,8 +298,9 @@
       padding-right: 125px;
       position: relative;
       img{
-        width: 475px;
-        height: 475px;
+        max-width: 475px;
+        // height: 475px;
+        height: auto;
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center center;
@@ -485,11 +523,14 @@
   padding-bottom: 93px;
 }
 .private__inner-img{
+    max-width: 600px;
     padding-right: 125px;
     position: relative;
     img{
-      width: 475px;
-      height: 475px;
+      position: relative;
+      max-width: 475px;
+      // height: 475px;
+      height: auto;
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center center;
@@ -527,6 +568,7 @@
     }
 }
 .private__inner-images{
+  max-width: 600px;
   .private__inner-abs{
     height: 80px;
     width: 476px;
@@ -615,6 +657,8 @@
   }
 }
 .contact__box{
+  margin-top: 20px;
+  margin-bottom: 30px;
   font-weight: bold;
   font-size: 12px;
   line-height: 12px;
@@ -708,3 +752,9 @@
 }
 
 // end footer 
+
+
+
+
+
+@import '_media';

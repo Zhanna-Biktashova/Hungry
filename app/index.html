@@ -22,16 +22,19 @@
         </a>
       </div>
       <nav class="menu">
+        <button class="menu__btn">
+          <span></span>
+        </button>
         <ul class="menu__list">
-          <li><a href="#">Главная</a></li>
-          <li><a href="#">О нас</a></li>
-          <li><a href="#">Команда</a></li>
-          <li class="menu__list-right"><a href="#">Бронирование</a></li>
+          <li class="menu__list-item"><a class="menu__list-link" href="#">Главная</a></li>
+          <li class="menu__list-item"><a class="menu__list-link" href="#">О нас</a></li>
+          <li class="menu__list-item"><a class="menu__list-link" href="#">Команда</a></li>
+          <li class="menu__list-item menu__list-right"><a class="menu__list-link" href="#">Бронирование</a></li>
 
-          <li><a href="#">Меню</a></li>
-          <li><a href="#">Галерея</a></li>
-          <li><a href="#">События</a></li>
-          <li><a href="#">Контакты</a></li>
+          <li class="menu__list-item"><a class="menu__list-link" href="#">Меню</a></li>
+          <li class="menu__list-item"><a class="menu__list-link" href="#">Галерея</a></li>
+          <li class="menu__list-item"><a class="menu__list-link" href="#">События</a></li>
+          <li class="menu__list-item"><a class="menu__list-link" href="#">Контакты</a></li>
         </ul>
       </nav>
       <div class="header__box">
@@ -39,8 +42,8 @@
           <span>Restaurant </span>Hungry People
         </div>
         <div class="header__link">
-          <a href="#">Book Table</a>
-          <a href="#">Explore</a>
+          <a href="#table">Забронировать стол</a>
+          <a href="#menu">Меню</a>
         </div>
         <div class="header__icon">
           <div class="header__icon-facebook">
@@ -64,17 +67,14 @@
       <div class="about__inner block__inner">
         <div class="about__inner-box">
           <div class="about__inner-title">
-            About us
+            О нас
           </div>
           <div class="about__inner-description">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor
-            magna.
+            Искусство кулинарии складывается из мелочей. Лишь ежедневная тщательная работа над своим стилем способна привести Мастера к пониманию настоящей красоты блюд. И пусть во имя цели будет пройден путь длинною в двадцать лет – идея стоит того, чтобы стать обладателем собственного, присущего лишь тебе почерка.
           </div>
           <div class="about__inner-text">
-            Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed
-            dictum,
-            enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt
-            feugiat diam convallis pharetra. Nulla facilisis semper laoreet.
+            В ресторане постоянно проходят акции: скидка 20% на все меню по будним дням с 12:00 до 16:00; хинкальный понедельник — скидка 50% на все хинкали; 10 % скидка в день рождения и т.д.
+            Мы постоянно пытаемся удивлять наших гостей новинками меню, а также вводим сезонные блюда.
           </div>
         </div>
         <div class="about__inner-images">
@@ -87,7 +87,7 @@
   <section class="team" style="background-image: url(images/team-bg.jpg);">
     <div class="container">
       <div class="team__title">
-        Our Team
+        Наша команда
       </div>
       <div class="team__inner block__inner">
         <div class="team__inner-images">
@@ -95,17 +95,13 @@
         </div>
         <div class="team__inner-box">
           <div class="team__inner-title">
-            Master Chef
+            Мастер Шеф
           </div>
           <div class="team__inner-description">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor
-            magna.
+            Осуществляет постоянный контроль за технологией приготовления пищи, нормами закладки сырья и соблюдением работниками санитарных требований и правил личной гигиены.
           </div>
           <div class="team__inner-text">
-            Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed
-            dictum,
-            enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt
-            feugiat diam convallis pharetra. Nulla facilisis semper laoreet.
+            Настоящий шеф-повар подобно хорошему художнику должен руководствоваться творческой свободой, не боясь выходить из зоны комфорта. Подача блюд в индустрии питания играет огромную роль и это то, на что должен быть направлен креативный потенциал прежде всего.
           </div>
         </div>
 
@@ -113,32 +109,32 @@
     </div>
   </section>
 
-  <section class="book">
+  <section class="book" id="table">
     <div class="container">
       <div class="book__inner block__inner">
         <div class="book__inner-box">
           <div class="book__inner-title">
-            Book a table
+            Забронировать стол
           </div>
           <div class="book__form">
             <form>
-              <input type="text" placeholder="Name" required>
+              <input type="text" placeholder="Имя" required>
               <input type="email" placeholder="Email" required>
-              <input type="number" placeholder="Phone" required>
+              <input type="number" placeholder="Телефон" required>
               <select class="select-css">
-                <option> People</option>
+                <option>Количество человек</option>
                 <option>1-5</option>
                 <option>5-10</option>
                 <option>10-20</option>
               </select>
               <input type="date" placeholder="Date (mm/dd)" required>
               <select class="select-css">
-                <option>Time</option>
+                <option>Время</option>
                 <option>12-00</option>
                 <option>13-00</option>
                 <option>14-00</option>
               </select>
-              <button type="submit">BOOK NOW</button>
+              <button type="submit">Забронируйте сейчас</button>
             </form>
           </div>
 
@@ -153,7 +149,7 @@
   <section class="special" style="background-image: url(images/specialties-bg.jpg);">
     <div class="container">
       <div class="special__title">
-        Specialties
+        Лучшие блюда
       </div>
       <div class="slider__inner">
         <div class="slider__item">
@@ -163,18 +159,13 @@
             </div>
             <div class="special__inner-box">
               <div class="special__inner-title">
-                Chocolate pancakes
+                Шоколадные панкейки
               </div>
               <div class="special__inner-description">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor
-                magna.
+                Панкейки это традиционное блюдо Северной Америки, популярное как в США, так и в Канаде. В этих странах панкейки являются неотъемлемой частью завтрака, но и жители других континентов давно оценили их по достоинству – сегодня эта вкусная выпечка входит в меню кафе и ресторанов по всему миру.
               </div>
               <div class="team__inner-text">
-                Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed
-                dictum,
-                enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris
-                tincidunt
-                feugiat diam convallis pharetra. Nulla facilisis semper laoreet.
+                При подаче очень вкусно полить их сиропом, шоколадным или карамельным соусом, а сверху положить свежие фрукты или ягоды, чтобы слегка оттенить сладость соуса.
               </div>
             </div>
           </div>
@@ -186,18 +177,13 @@
             </div>
             <div class="special__inner-box">
               <div class="special__inner-title">
-                Chocolate pancakes
+                CШоколадные панкейки
               </div>
               <div class="special__inner-description">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor
-                magna.
+                Панкейки это традиционное блюдо Северной Америки, популярное как в США, так и в Канаде. В этих странах панкейки являются неотъемлемой частью завтрака, но и жители других континентов давно оценили их по достоинству – сегодня эта вкусная выпечка входит в меню кафе и ресторанов по всему миру.
               </div>
               <div class="team__inner-text">
-                Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed
-                dictum,
-                enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris
-                tincidunt
-                feugiat diam convallis pharetra. Nulla facilisis semper laoreet.
+                При подаче очень вкусно полить их сиропом, шоколадным или карамельным соусом, а сверху положить свежие фрукты или ягоды, чтобы слегка оттенить сладость соуса.
               </div>
             </div>
           </div>
@@ -209,18 +195,13 @@
             </div>
             <div class="special__inner-box">
               <div class="special__inner-title">
-                Chocolate pancakes
+                Шоколадные панкейки
               </div>
               <div class="special__inner-description">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor
-                magna.
+                Панкейки это традиционное блюдо Северной Америки, популярное как в США, так и в Канаде. В этих странах панкейки являются неотъемлемой частью завтрака, но и жители других континентов давно оценили их по достоинству – сегодня эта вкусная выпечка входит в меню кафе и ресторанов по всему миру.
               </div>
               <div class="team__inner-text">
-                Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed
-                dictum,
-                enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris
-                tincidunt
-                feugiat diam convallis pharetra. Nulla facilisis semper laoreet.
+                При подаче очень вкусно полить их сиропом, шоколадным или карамельным соусом, а сверху положить свежие фрукты или ягоды, чтобы слегка оттенить сладость соуса.
               </div>
             </div>
           </div>
@@ -229,150 +210,149 @@
     </div>
   </section>
 
-  <section class="delicious-menu">
+  <section class="delicious-menu" id="menu">
     <div class="container">
       <div class="delicious-menu__inner">
         <div class="delicious-menu__inner-box">
           <div class="delicious-menu__inner-title">
-            Master Chef
+            Мастер шеф
           </div>
           <div class="delicious-menu__inner-description">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor
-            magna.
+            Лучшее меню, разработанное шеф-поваром!
           </div>
         </div>
         <div class="delicious-menu__inner-head">
           <ul class="delicious-menu__inner-list">
-            <li>Soupe</li>
-            <li>Pizza</li>
-            <li>Pasta</li>
-            <li>Desert</li>
-            <li>Wine</li>
-            <li>Beer</li>
-            <li>Drinks</li>
+            <li>Супы</li>
+            <li>Пицца</li>
+            <li>Паста</li>
+            <li>Десерт</li>
+            <li>Вино</li>
+            <li>Пиво</li>
+            <li>Напитки</li>
           </ul>
         </div>
 
         <div class="delicious-menu__inner-price">
 
           <div class="delicious-menu__inner-line">
-            <div class="delicious-menu__inner-name">PIZZA QUATRO STAGIONI . . . .
-              <span>55,68 USD</span>
+            <div class="delicious-menu__inner-name">Пицца Маргарита . . . .
+              <span>350 руб</span>
             </div>
             <div class="delicious-menu__inner-sup">
-              Integer ullamcorper neque eu purus euismod
+              Тонкое тесто, помидоры, сыр
             </div>
           </div>
           <div class="delicious-menu__inner-line">
-            <div class="delicious-menu__inner-name">PIZZA QUATRO STAGIONI . . . .
-              <span>55,68 USD</span>
+            <div class="delicious-menu__inner-name">Пицца Маргарита . . . .
+              <span>350 руб</span>
             </div>
             <div class="delicious-menu__inner-sup">
-              Integer ullamcorper neque eu purus euismod
+              Тонкое тесто, помидоры, сыр
             </div>
           </div>
           <div class="delicious-menu__inner-line">
-            <div class="delicious-menu__inner-name">PIZZA QUATRO STAGIONI . . . .
-              <span>55,68 USD</span>
+            <div class="delicious-menu__inner-name">Пицца Маргарита . . . .
+              <span>350 руб</span>
             </div>
             <div class="delicious-menu__inner-sup">
-              Integer ullamcorper neque eu purus euismod
+              Тонкое тесто, помидоры, сыр
             </div>
           </div>
           <div class="delicious-menu__inner-line">
-            <div class="delicious-menu__inner-name">PIZZA QUATRO STAGIONI . . . .
-              <span>55,68 USD</span>
+            <div class="delicious-menu__inner-name">Пицца Маргарита . . . .
+              <span>350 руб</span>
             </div>
             <div class="delicious-menu__inner-sup">
-              Integer ullamcorper neque eu purus euismod
+              Тонкое тесто, помидоры, сыр
             </div>
           </div>
           <div class="delicious-menu__inner-line">
-            <div class="delicious-menu__inner-name">PIZZA QUATRO STAGIONI . . . .
-              <span>55,68 USD</span>
+            <div class="delicious-menu__inner-name">Пицца Маргарита . . . .
+              <span>350 руб</span>
             </div>
             <div class="delicious-menu__inner-sup">
-              Integer ullamcorper neque eu purus euismod
+              Тонкое тесто, помидоры, сыр
             </div>
           </div>
           <div class="delicious-menu__inner-line">
-            <div class="delicious-menu__inner-name">PIZZA QUATRO STAGIONI . . . .
-              <span>55,68 USD</span>
+            <div class="delicious-menu__inner-name">Пицца Маргарита . . . .
+              <span>350 руб</span>
             </div>
             <div class="delicious-menu__inner-sup">
-              Integer ullamcorper neque eu purus euismod
+              Тонкое тесто, помидоры, сыр
             </div>
           </div>
           <div class="delicious-menu__inner-line">
-            <div class="delicious-menu__inner-name">PIZZA QUATRO STAGIONI . . . .
-              <span>55,68 USD</span>
+            <div class="delicious-menu__inner-name">Пицца Маргарита . . . .
+              <span>350 руб</span>
             </div>
             <div class="delicious-menu__inner-sup">
-              Integer ullamcorper neque eu purus euismod
+              Тонкое тесто, помидоры, сыр
             </div>
           </div>
           <div class="delicious-menu__inner-line">
-            <div class="delicious-menu__inner-name">PIZZA QUATRO STAGIONI . . . .
-              <span>55,68 USD</span>
+            <div class="delicious-menu__inner-name">Пицца Маргарита . . . .
+              <span>350 руб</span>
             </div>
             <div class="delicious-menu__inner-sup">
-              Integer ullamcorper neque eu purus euismod
+              Тонкое тесто, помидоры, сыр
             </div>
           </div>
           <div class="delicious-menu__inner-line">
-            <div class="delicious-menu__inner-name">PIZZA QUATRO STAGIONI . . . .
-              <span>55,68 USD</span>
+            <div class="delicious-menu__inner-name">Пицца Маргарита . . . .
+              <span>350 руб</span>
             </div>
             <div class="delicious-menu__inner-sup">
-              Integer ullamcorper neque eu purus euismod
+              Тонкое тесто, помидоры, сыр
             </div>
           </div>
           <div class="delicious-menu__inner-line">
-            <div class="delicious-menu__inner-name">PIZZA QUATRO STAGIONI . . . .
-              <span>55,68 USD</span>
+            <div class="delicious-menu__inner-name">Пицца Маргарита . . . .
+              <span>350 руб</span>
             </div>
             <div class="delicious-menu__inner-sup">
-              Integer ullamcorper neque eu purus euismod
+              Тонкое тесто, помидоры, сыр
             </div>
           </div>
           <div class="delicious-menu__inner-line">
-            <div class="delicious-menu__inner-name">PIZZA QUATRO STAGIONI . . . .
-              <span>55,68 USD</span>
+            <div class="delicious-menu__inner-name">Пицца Маргарита . . . .
+              <span>350 руб</span>
             </div>
             <div class="delicious-menu__inner-sup">
-              Integer ullamcorper neque eu purus euismod
+              Тонкое тесто, помидоры, сыр
             </div>
           </div>
           <div class="delicious-menu__inner-line">
-            <div class="delicious-menu__inner-name">PIZZA QUATRO STAGIONI . . . .
-              <span>55,68 USD</span>
+            <div class="delicious-menu__inner-name">Пицца Маргарита . . . .
+              <span>350 руб</span>
             </div>
             <div class="delicious-menu__inner-sup">
-              Integer ullamcorper neque eu purus euismod
+              Тонкое тесто, помидоры, сыр
             </div>
           </div>
           <div class="delicious-menu__inner-line">
-            <div class="delicious-menu__inner-name">PIZZA QUATRO STAGIONI . . . .
-              <span>55,68 USD</span>
+            <div class="delicious-menu__inner-name">Пицца Маргарита . . . .
+              <span>350 руб</span>
             </div>
             <div class="delicious-menu__inner-sup">
-              Integer ullamcorper neque eu purus euismod
+              Тонкое тесто, помидоры, сыр
             </div>
           </div>
           <div class="delicious-menu__inner-line">
-            <div class="delicious-menu__inner-name">PIZZA QUATRO STAGIONI . . . .
-              <span>55,68 USD</span>
+            <div class="delicious-menu__inner-name">Пицца Маргарита . . . .
+              <span>350 руб</span>
             </div>
             <div class="delicious-menu__inner-sup">
-              Integer ullamcorper neque eu purus euismod
+              Тонкое тесто, помидоры, сыр
             </div>
           </div>
           <div class="delicious-menu__inner-line">
-            <div class="delicious-menu__inner-name">PIZZA QUATRO STAGIONI . . . .
-              <span>55,68 USD</span>
+            <div class="delicious-menu__inner-name">Пицца Маргарита . . . .
+              <span>350 руб</span>
             </div>
             <div class="delicious-menu__inner-sup">
-              Integer ullamcorper neque eu purus euismod
+              Тонкое тесто, помидоры, сыр
             </div>
           </div>
         </div>
@@ -383,16 +363,17 @@
   <section class="private" style="background-image: url(images/private-bg.jpg);">
     <div class="container">
       <div class="private__title">
-        Private Events
+        Частные мероприятия
       </div>
       <div class="private__inner block__inner">
         <div class="private__inner-images">
           <img src="images/private-left.jpg" alt="">
-          <div class="private__inner-abs">Weddings</div>
+          <div class="private__inner-abs">Свадьбы</div>
         </div>
         <div class="private__inner-img">
           <img src="images/private-right.jpg" alt="">
-          <div class="private__inner-abs">Corporate Pzrties</div>
+          <div class="private__inner-abs">
+            Корпоративные вечеринки</div>
         </div>
       </div>
     </div>
@@ -413,22 +394,21 @@
       <div class="contact__inner">
         <div class="contact__inner-box">
           <div class="contact__inner-title">
-            Contact
+            Контакты
           </div>
           <div class="contact__inner-description">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor
-            magna.
+            Оставьте ваши контакты и мы вам перезвоним!
           </div>
         </div>
         <div class="contact__form">
           <form>
-            <input type="text" placeholder="Name" required>
+            <input type="text" placeholder="Имя" required>
             <input type="email" placeholder="Email" required>
-            <input type="number" placeholder="Phone" required>
-            <textarea placeholder="Message" required></textarea>
+            <input type="number" placeholder="Телефон" required>
+            <textarea placeholder="Сообщение" required></textarea>
             <div class="contact__box">
               <a class="contact__box-address" href="#">
-                5th London Boulevard, U.K.
+                к Московский@град Московский Жил. Комплекс Радужная улица, д 90
               </a>
               <a class="contact__box-phone" href="tel:40729131637">
                 +40 729 131 637/+40 726 458 782
@@ -437,7 +417,8 @@
                 office@mindblister.com
               </a>
             </div>
-            <button type="submit">Send Message</button>
+            <button type="submit">
+              Отправить сообщение</button>
           </form>
         </div>
       </div>
@@ -451,7 +432,7 @@
   <footer class="footer">
     <div class="footer__inner">
       <div class="footer__copy">
-        © Copyright <span>Mindblister</span>  2019
+        © Авторские права <span>Mindblister</span>  2019
       </div>
     </div>
   </footer>
