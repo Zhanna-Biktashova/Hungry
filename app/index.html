@@ -1,19 +1,448 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+    integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/libs.min.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
+
 <body>
+  <header class="header" style="background-image: url(images/header-bg.jpg);">
+    <div class="container">
+      <div class="line"></div>
+      <div class="logo">
+        <a class="logo-link" href="#">
+          <img src="images/logo.png" alt="">
+        </a>
+      </div>
+      <nav class="menu">
+        <button class="menu__btn">
+          <span></span>
+        </button>
+        <ul class="menu__list">
+          <li class="menu__list-item"><a class="menu__list-link" href="#">Главная</a></li>
+          <li class="menu__list-item"><a class="menu__list-link" href="#">О нас</a></li>
+          <li class="menu__list-item"><a class="menu__list-link" href="#">Команда</a></li>
+          <li class="menu__list-item menu__list-right"><a class="menu__list-link" href="#">Бронирование</a></li>
+
+          <li class="menu__list-item"><a class="menu__list-link" href="#">Меню</a></li>
+          <li class="menu__list-item"><a class="menu__list-link" href="#">Галерея</a></li>
+          <li class="menu__list-item"><a class="menu__list-link" href="#">События</a></li>
+          <li class="menu__list-item"><a class="menu__list-link" href="#">Контакты</a></li>
+        </ul>
+      </nav>
+      <div class="header__box">
+        <div class="header__title">
+          <span>Restaurant </span>Hungry People
+        </div>
+        <div class="header__link">
+          <a href="#table">Забронировать стол</a>
+          <a href="#menu">Меню</a>
+        </div>
+        <div class="header__icon">
+          <div class="header__icon-facebook">
+            <i class="fa fa-facebook" aria-hidden="true"></i>
+          </div>
+          <div class="header__icon-twitter">
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+          </div>
+          <div class="header__icon-instagram">
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+          </div>
+        </div>
+      </div>
+      <a class="header__btn" href="#">
+      </a>
+    </div>
+  </header>
+
+  <section class="about">
+    <div class="container">
+      <div class="about__inner block__inner">
+        <div class="about__inner-box">
+          <div class="about__inner-title">
+            О нас
+          </div>
+          <div class="about__inner-description">
+            Искусство кулинарии складывается из мелочей. Лишь ежедневная тщательная работа над своим стилем способна привести Мастера к пониманию настоящей красоты блюд. И пусть во имя цели будет пройден путь длинною в двадцать лет – идея стоит того, чтобы стать обладателем собственного, присущего лишь тебе почерка.
+          </div>
+          <div class="about__inner-text">
+            В ресторане постоянно проходят акции: скидка 20% на все меню по будним дням с 12:00 до 16:00; хинкальный понедельник — скидка 50% на все хинкали; 10 % скидка в день рождения и т.д.
+            Мы постоянно пытаемся удивлять наших гостей новинками меню, а также вводим сезонные блюда.
+          </div>
+        </div>
+        <div class="about__inner-images">
+          <img src="images/about.jpg" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="team" style="background-image: url(images/team-bg.jpg);">
+    <div class="container">
+      <div class="team__title">
+        Наша команда
+      </div>
+      <div class="team__inner block__inner">
+        <div class="team__inner-images">
+          <img src="images/team.jpg" alt="">
+        </div>
+        <div class="team__inner-box">
+          <div class="team__inner-title">
+            Мастер Шеф
+          </div>
+          <div class="team__inner-description">
+            Осуществляет постоянный контроль за технологией приготовления пищи, нормами закладки сырья и соблюдением работниками санитарных требований и правил личной гигиены.
+          </div>
+          <div class="team__inner-text">
+            Настоящий шеф-повар подобно хорошему художнику должен руководствоваться творческой свободой, не боясь выходить из зоны комфорта. Подача блюд в индустрии питания играет огромную роль и это то, на что должен быть направлен креативный потенциал прежде всего.
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="book" id="table">
+    <div class="container">
+      <div class="book__inner block__inner">
+        <div class="book__inner-box">
+          <div class="book__inner-title">
+            Забронировать стол
+          </div>
+          <div class="book__form">
+            <form>
+              <input type="text" placeholder="Имя" required>
+              <input type="email" placeholder="Email" required>
+              <input type="number" placeholder="Телефон" required>
+              <select class="select-css">
+                <option>Количество человек</option>
+                <option>1-5</option>
+                <option>5-10</option>
+                <option>10-20</option>
+              </select>
+              <input type="date" placeholder="Date (mm/dd)" required>
+              <select class="select-css">
+                <option>Время</option>
+                <option>12-00</option>
+                <option>13-00</option>
+                <option>14-00</option>
+              </select>
+              <button type="submit">Забронируйте сейчас</button>
+            </form>
+          </div>
+
+        </div>
+        <div class="book__inner-images">
+          <img src="images/book.jpg" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="special" style="background-image: url(images/specialties-bg.jpg);">
+    <div class="container">
+      <div class="special__title">
+        Лучшие блюда
+      </div>
+      <div class="slider__inner">
+        <div class="slider__item">
+          <div class="slider__item-box">
+            <div class="special__inner-images">
+              <img src="images/specialties.jpg" alt="">
+            </div>
+            <div class="special__inner-box">
+              <div class="special__inner-title">
+                Шоколадные панкейки
+              </div>
+              <div class="special__inner-description">
+                Панкейки это традиционное блюдо Северной Америки, популярное как в США, так и в Канаде. В этих странах панкейки являются неотъемлемой частью завтрака, но и жители других континентов давно оценили их по достоинству – сегодня эта вкусная выпечка входит в меню кафе и ресторанов по всему миру.
+              </div>
+              <div class="team__inner-text">
+                При подаче очень вкусно полить их сиропом, шоколадным или карамельным соусом, а сверху положить свежие фрукты или ягоды, чтобы слегка оттенить сладость соуса.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slider__item">
+          <div class="slider__item-box">
+            <div class="special__inner-images">
+              <img src="images/specialties.jpg" alt="">
+            </div>
+            <div class="special__inner-box">
+              <div class="special__inner-title">
+                CШоколадные панкейки
+              </div>
+              <div class="special__inner-description">
+                Панкейки это традиционное блюдо Северной Америки, популярное как в США, так и в Канаде. В этих странах панкейки являются неотъемлемой частью завтрака, но и жители других континентов давно оценили их по достоинству – сегодня эта вкусная выпечка входит в меню кафе и ресторанов по всему миру.
+              </div>
+              <div class="team__inner-text">
+                При подаче очень вкусно полить их сиропом, шоколадным или карамельным соусом, а сверху положить свежие фрукты или ягоды, чтобы слегка оттенить сладость соуса.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slider__item">
+          <div class="slider__item-box">
+            <div class="special__inner-images">
+              <img src="images/specialties.jpg" alt="">
+            </div>
+            <div class="special__inner-box">
+              <div class="special__inner-title">
+                Шоколадные панкейки
+              </div>
+              <div class="special__inner-description">
+                Панкейки это традиционное блюдо Северной Америки, популярное как в США, так и в Канаде. В этих странах панкейки являются неотъемлемой частью завтрака, но и жители других континентов давно оценили их по достоинству – сегодня эта вкусная выпечка входит в меню кафе и ресторанов по всему миру.
+              </div>
+              <div class="team__inner-text">
+                При подаче очень вкусно полить их сиропом, шоколадным или карамельным соусом, а сверху положить свежие фрукты или ягоды, чтобы слегка оттенить сладость соуса.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="delicious-menu" id="menu">
+    <div class="container">
+      <div class="delicious-menu__inner">
+        <div class="delicious-menu__inner-box">
+          <div class="delicious-menu__inner-title">
+            Мастер шеф
+          </div>
+          <div class="delicious-menu__inner-description">
+            Лучшее меню, разработанное шеф-поваром!
+          </div>
+        </div>
+        <div class="delicious-menu__inner-head">
+          <ul class="delicious-menu__inner-list">
+            <li>Супы</li>
+            <li>Пицца</li>
+            <li>Паста</li>
+            <li>Десерт</li>
+            <li>Вино</li>
+            <li>Пиво</li>
+            <li>Напитки</li>
+          </ul>
+        </div>
+
+        <div class="delicious-menu__inner-price">
+
+          <div class="delicious-menu__inner-line">
+            <div class="delicious-menu__inner-name">Пицца Маргарита . . . .
+              <span>350 руб</span>
+            </div>
+            <div class="delicious-menu__inner-sup">
+              Тонкое тесто, помидоры, сыр
+            </div>
+          </div>
+          <div class="delicious-menu__inner-line">
+            <div class="delicious-menu__inner-name">Пицца Маргарита . . . .
+              <span>350 руб</span>
+            </div>
+            <div class="delicious-menu__inner-sup">
+              Тонкое тесто, помидоры, сыр
+            </div>
+          </div>
+          <div class="delicious-menu__inner-line">
+            <div class="delicious-menu__inner-name">Пицца Маргарита . . . .
+              <span>350 руб</span>
+            </div>
+            <div class="delicious-menu__inner-sup">
+              Тонкое тесто, помидоры, сыр
+            </div>
+          </div>
+          <div class="delicious-menu__inner-line">
+            <div class="delicious-menu__inner-name">Пицца Маргарита . . . .
+              <span>350 руб</span>
+            </div>
+            <div class="delicious-menu__inner-sup">
+              Тонкое тесто, помидоры, сыр
+            </div>
+          </div>
+          <div class="delicious-menu__inner-line">
+            <div class="delicious-menu__inner-name">Пицца Маргарита . . . .
+              <span>350 руб</span>
+            </div>
+            <div class="delicious-menu__inner-sup">
+              Тонкое тесто, помидоры, сыр
+            </div>
+          </div>
+          <div class="delicious-menu__inner-line">
+            <div class="delicious-menu__inner-name">Пицца Маргарита . . . .
+              <span>350 руб</span>
+            </div>
+            <div class="delicious-menu__inner-sup">
+              Тонкое тесто, помидоры, сыр
+            </div>
+          </div>
+          <div class="delicious-menu__inner-line">
+            <div class="delicious-menu__inner-name">Пицца Маргарита . . . .
+              <span>350 руб</span>
+            </div>
+            <div class="delicious-menu__inner-sup">
+              Тонкое тесто, помидоры, сыр
+            </div>
+          </div>
+          <div class="delicious-menu__inner-line">
+            <div class="delicious-menu__inner-name">Пицца Маргарита . . . .
+              <span>350 руб</span>
+            </div>
+            <div class="delicious-menu__inner-sup">
+              Тонкое тесто, помидоры, сыр
+            </div>
+          </div>
+          <div class="delicious-menu__inner-line">
+            <div class="delicious-menu__inner-name">Пицца Маргарита . . . .
+              <span>350 руб</span>
+            </div>
+            <div class="delicious-menu__inner-sup">
+              Тонкое тесто, помидоры, сыр
+            </div>
+          </div>
+          <div class="delicious-menu__inner-line">
+            <div class="delicious-menu__inner-name">Пицца Маргарита . . . .
+              <span>350 руб</span>
+            </div>
+            <div class="delicious-menu__inner-sup">
+              Тонкое тесто, помидоры, сыр
+            </div>
+          </div>
+          <div class="delicious-menu__inner-line">
+            <div class="delicious-menu__inner-name">Пицца Маргарита . . . .
+              <span>350 руб</span>
+            </div>
+            <div class="delicious-menu__inner-sup">
+              Тонкое тесто, помидоры, сыр
+            </div>
+          </div>
+          <div class="delicious-menu__inner-line">
+            <div class="delicious-menu__inner-name">Пицца Маргарита . . . .
+              <span>350 руб</span>
+            </div>
+            <div class="delicious-menu__inner-sup">
+              Тонкое тесто, помидоры, сыр
+            </div>
+          </div>
+          <div class="delicious-menu__inner-line">
+            <div class="delicious-menu__inner-name">Пицца Маргарита . . . .
+              <span>350 руб</span>
+            </div>
+            <div class="delicious-menu__inner-sup">
+              Тонкое тесто, помидоры, сыр
+            </div>
+          </div>
+          <div class="delicious-menu__inner-line">
+            <div class="delicious-menu__inner-name">Пицца Маргарита . . . .
+              <span>350 руб</span>
+            </div>
+            <div class="delicious-menu__inner-sup">
+              Тонкое тесто, помидоры, сыр
+            </div>
+          </div>
+          <div class="delicious-menu__inner-line">
+            <div class="delicious-menu__inner-name">Пицца Маргарита . . . .
+              <span>350 руб</span>
+            </div>
+            <div class="delicious-menu__inner-sup">
+              Тонкое тесто, помидоры, сыр
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="private" style="background-image: url(images/private-bg.jpg);">
+    <div class="container">
+      <div class="private__title">
+        Частные мероприятия
+      </div>
+      <div class="private__inner block__inner">
+        <div class="private__inner-images">
+          <img src="images/private-left.jpg" alt="">
+          <div class="private__inner-abs">Свадьбы</div>
+        </div>
+        <div class="private__inner-img">
+          <img src="images/private-right.jpg" alt="">
+          <div class="private__inner-abs">
+            Корпоративные вечеринки</div>
+        </div>
+      </div>
+    </div>
+    <div class="private__inner-gallery">
+      <img src="images/gallery-1.jpg" alt="">
+      <img src="images/gallery-2.jpg" alt="">
+      <img src="images/gallery-3.jpg" alt="">
+      <img src="images/gallery-4.jpg" alt="">
+      <img src="images/gallery-1.jpg" alt="">
+      <img src="images/gallery-2.jpg" alt="">
+      <img src="images/gallery-3.jpg" alt="">
+      <img src="images/gallery-4.jpg" alt="">
+    </div>
+  </section>
+
+  <section class="contact">
+    <div class="container">
+      <div class="contact__inner">
+        <div class="contact__inner-box">
+          <div class="contact__inner-title">
+            Контакты
+          </div>
+          <div class="contact__inner-description">
+            Оставьте ваши контакты и мы вам перезвоним!
+          </div>
+        </div>
+        <div class="contact__form">
+          <form>
+            <input type="text" placeholder="Имя" required>
+            <input type="email" placeholder="Email" required>
+            <input type="number" placeholder="Телефон" required>
+            <textarea placeholder="Сообщение" required></textarea>
+            <div class="contact__box">
+              <a class="contact__box-address" href="#">
+                к Московский@град Московский Жил. Комплекс Радужная улица, д 90
+              </a>
+              <a class="contact__box-phone" href="tel:40729131637">
+                +40 729 131 637/+40 726 458 782
+              </a>
+              <a class="contact__box-email">
+                office@mindblister.com
+              </a>
+            </div>
+            <button type="submit">
+              Отправить сообщение</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4496.183223404218!2d37.67511442768299!3d55.70477933040481!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54afc73d4b0c9%3A0x3d44d6cc5757cf4c!2z0JzQvtGB0LrQstCw!5e0!3m2!1sru!2sru!4v1602697803573!5m2!1sru!2sru" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+  </section>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__copy">
+        © Авторские права <span>Mindblister</span>  2019
+      </div>
+    </div>
+  </footer>
 
 
-  
-  
+
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="js/libs.min.js"></script>
-  <script src="js/main.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
+
 </html>
